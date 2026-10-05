@@ -1,0 +1,59 @@
+:root{
+    --title: 4em;
+    --text: 1.2em;
+    --label: 2em;
+    --text-color: #ffffff;
+    --primary: #2D338A;
+    --secondary: #ffffff;
+    --accent: #A4813A;
+    --title-font: "Charis SIL" , serif;
+    --text-font: "Fira Sans," serif;
+}
+
+h1{
+    font-size: var(--title);
+    margin-bottom: 10px;
+    font-family: var(--title-font);
+    font-weight: 700;
+}
+
+.container{
+    max-width: 70vw;
+    width: 90%;       
+    margin: 0 auto;    
+    background-color: var(--primary);
+    color: var(--secondary);
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    border-radius: 15px;
+}
+
+.container label{
+    font-size: var(--label)
+}
+
+#input{
+    font-size: var(--label);
+    margin-bottom: 1.2em;
+    font-family: var(--text-font);
+}
+
+#register{
+    text-align: center;
+    font-size: var(--text);
+    color: var(--secondary);
+    border-radius: 5px;
+    background-color: var(--accent);
+    display: block;
+    width: max-content;
+    margin: 0 auto 1.2em;
+    border-style: none;
+    padding: 0.3em;
+}
+
+#register:hover{
+    cursor: pointer;
+    filter:brightness(1.2);
+    font-family: var(--title-font);
+}
