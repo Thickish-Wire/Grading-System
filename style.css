@@ -10,6 +10,42 @@
     --text-font: "Fira Sans," serif;
 }
 
+body{
+    margin: 1.5em 0;
+}
+
+.header{
+    display: flex;
+    margin-bottom: 1.5em;
+    
+}
+
+.logo{
+    max-width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: left;
+}
+
+.headerTitle, .headerSubtitle{
+    color: var(--primary);
+    font-family: var(--text-font);
+}
+
+.headerTitle{
+    font-family: var(--title-font);
+    font-weight: 700;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.headerSubtitle{
+    margin-top: 0;
+    text-align: center;
+}
+
+
+
 h1{
     font-size: var(--title);
     margin-bottom: 10px;
@@ -55,5 +91,4 @@ h1{
 #register:hover{
     cursor: pointer;
     filter:brightness(1.2);
-    font-family: var(--title-font);
 }
